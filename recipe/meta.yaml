@@ -1,5 +1,5 @@
 {% set name = "napari-parallel" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-parallel-{{ version }}.tar.gz
-  sha256: 8d597c51ce801101888f8ba6526d0d90e2ede536fb655a463b3257a320f07a58
+  sha256: 9713f0fccee51ed078f448a3c495e5342b625098af3da71d21bac403bad9fa86
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - napari
     - numpy
     - pyqode.python
-    - python >=3.8    
+    - python >=3.8
     - qtpy
 
 test:
